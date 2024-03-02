@@ -44,7 +44,7 @@
             cargoBuildFlags = [ "--bin" "eww" ];
 
             nativeBuildInputs = with pkgs; [ pkg-config wrapGAppsHook ];
-            buildInputs = with pkgs; [ gtk3 librsvg gtk-layer-shell ];
+            buildInputs = with pkgs; [ gtk3 librsvg gtk-layer-shell libdbusmenu-gtk3 ];
           };
 
           eww-wayland = nixpkgs.lib.warn
@@ -60,7 +60,7 @@
         in {
           default = pkgs.mkShell {
             inputsFrom = with pkgs; [ eww ];
-            packages = with pkgs; [ deno mdbook ];
+            packages = with pkgs; [ deno mdbook glib gdk-pixbuf librsvg libdbusmenu-gtk3 ];
 
             RUST_SRC_PATH = "${rust}/lib/rustlib/src/rust/library";
           };

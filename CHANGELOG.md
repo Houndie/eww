@@ -8,6 +8,9 @@ All notable changes to eww will be listed here, starting at changes since versio
 - The `shell-completions` subcommand is now run before anything is set up
 - Fix and refactor nix flake (By: w-lfchen)
 
+### Features
+- Add `systray` widget (By: ralismark)
+
 ## [0.5.0] (17.02.2024)
 
 ### BREAKING CHANGES
@@ -40,6 +43,7 @@ All notable changes to eww will be listed here, starting at changes since versio
 ### Fixes
 - Fix wrong values in `EWW_NET`
 - Fix logfiles growing indefinitely
+>>>>>>> upstream/master
 
 ## [0.4.0] (04.09.2022)
 
